@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head.ejs') %>
+  <body>
+    <div class="container">
+      <%- include('./partials/nav.ejs') %>
+      <header><h1>Add Message</h1></header>
+      <main>
+        <form method="POST" action="/new">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="message">Message:</label>
+          <input type="text" id="message" name="message" required />
+          <button type="submit" class="add-btn">Add</button>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
