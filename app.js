@@ -25,5 +25,3 @@ app.use(formRouter);
 app.use((req, res) => {
   res.status(404).render("404", { title: "Error - 404" });
 });
-
-//NEED TO SORT OUT CSS
